@@ -1,0 +1,454 @@
+@charset "UTF-8";
+.pd-l-plate {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+}
+
+@media only screen and (min-width: 1442px) {
+  .pd-l-plate {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-l-plate {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94.02174%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-l-plate {
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.5%;
+  }
+}
+
+.pd-l-plate::before, .pd-l-plate::after {
+  content: ' ';
+  display: table;
+}
+
+.pd-l-plate::after {
+  clear: both;
+}
+
+.pd-l-plate-scale {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.pd-theme-dark {
+  color: white;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.pd-theme-dark a {
+  color: white;
+  text-shadow: none;
+}
+
+.pd-theme-dark-shadowless {
+  color: white;
+  text-shadow: none;
+}
+
+.pd-theme-dark-shadowless a {
+  color: white;
+  text-shadow: none;
+}
+
+.pd-theme-dark-blue {
+  color: white;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.pd-theme-dark-blue a {
+  text-shadow: none;
+}
+
+.pd-theme-light {
+  color: #333;
+}
+
+.pd-theme-light a {
+  color: #333;
+}
+
+.pd-theme-dark-light {
+  color: #fff;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.pd-theme-dark-light a {
+  color: white;
+  text-shadow: none;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-theme-dark-light {
+    color: #333;
+  }
+  .pd-theme-dark-light a {
+    color: #333;
+  }
+}
+
+.pd-theme-dark-light-blue {
+  color: #fff;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.pd-theme-dark-light-blue a {
+  color: white;
+  text-shadow: none;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-theme-dark-light-blue {
+    color: #333;
+    text-shadow: none;
+  }
+  .pd-theme-dark-light-blue a {
+    color: #0088cc;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-theme-default-dark {
+    color: #fff;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  .pd-theme-default-dark a {
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+.pd-billboard h1 + *, .pd-billboard h2 + *, .pd-billboard h3 + *, .pd-billboard h4 + *, .pd-billboard h5 + *, .pd-billboard h6 + * {
+  margin-top: auto;
+}
+
+.pd-billboard p + h1, .pd-billboard ul + h1, .pd-billboard ol + h1, .pd-billboard p + h2, .pd-billboard ul + h2, .pd-billboard ol + h2, .pd-billboard p + h3, .pd-billboard ul + h3, .pd-billboard ol + h3, .pd-billboard p + h4, .pd-billboard ul + h4,
+.pd-billboard ol + h4, .pd-billboard p + h5, .pd-billboard ul + h5, .pd-billboard ol + h5, .pd-billboard p + h6, .pd-billboard ul + h6, .pd-billboard ol + h6 {
+  margin-top: auto;
+}
+
+.pd-billboard ul, .pd-billboard ol {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.pd-billboard p + *, .pd-billboard ul + *, .pd-billboard ol + * {
+  margin-top: auto;
+}
+
+.pd-billboard-links li a {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-billboard-links li a {
+    white-space: normal;
+  }
+}
+
+.pd-billboard-background-scale {
+  max-width: 1070px;
+  min-width: 980px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-billboard-background-scale {
+    max-width: inherit;
+    min-width: inherit;
+  }
+}
+
+.pd-billboard-scale .pd-l-plate-scale .pd-billboard-background {
+  line-height: 0;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-billboard-scale .pd-l-plate-scale .pd-billboard-background {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.pd-billboard-scale .pd-l-plate-scale .pd-billboard-hero {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -720px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .pd-billboard-scale .pd-l-plate-scale .pd-billboard-hero {
+    width: 100%;
+    position: static;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-billboard-scale .pd-l-plate-scale .pd-billboard-hero {
+    margin: 0 -368px;
+    position: static;
+  }
+}
+
+.pd-billboard-scale .pd-l-plate-scale .pd-billboard-info,
+.pd-billboard-scale .pd-l-plate-scale .pd-billboard-info-2L {
+  position: absolute;
+  z-index: 1;
+  top: 49.9%;
+  width: 980px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.as-navtuck .pd-billboard-scale .pd-l-plate-scale .pd-billboard-info, .as-navtuck
+.pd-billboard-scale .pd-l-plate-scale .pd-billboard-info-2L {
+  top: 60.1%;
+}
+
+.as-carousel .pd-billboard-scale .pd-l-plate-scale .pd-billboard-info, .as-carousel
+.pd-billboard-scale .pd-l-plate-scale .pd-billboard-info-2L {
+  top: 60.5%;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-billboard-scale .pd-l-plate-scale .pd-billboard-info,
+  .pd-billboard-scale .pd-l-plate-scale .pd-billboard-info-2L {
+    width: 320px;
+  }
+}
+
+/* GENERIC CSS FOR CATEGORY MARQUEE BILLBOARDS */
+.as-l-fullwidth.as-navtuck {
+  margin-top: -97px;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .as-l-fullwidth.as-navtuck {
+    margin-top: -96px;
+  }
+}
+
+.pd-category-header .pd-l-plate-scale {
+  min-height: 320px;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-category-header .pd-l-plate-scale {
+    min-height: 240px;
+  }
+}
+
+.pd-category-header .pd-billboard-background {
+  line-height: 0;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-category-header .pd-billboard-background {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    line-height: 0;
+  }
+}
+
+.pd-category-header .pd-billboard-hero {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -720px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .pd-category-header .pd-billboard-hero {
+    width: 100%;
+    position: static;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-category-header .pd-billboard-hero {
+    margin: 0 -368px;
+    width: 736px;
+    height: auto;
+    position: static;
+  }
+}
+
+.pd-category-header .pd-billboard-info {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-category-header .pd-billboard-info {
+    -webkit-transform: translateY(80%);
+    -ms-transform: translateY(80%);
+    transform: translateY(80%);
+  }
+}
+
+.pd-category-header .pd-billboard-header {
+  padding-bottom: 10px;
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: 0.008em;
+  font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(ar) {
+  line-height: 1.325;
+  font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(ja) {
+  line-height: 1.125;
+  font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(th) {
+  font-size: 36px;
+  line-height: 1.30556;
+  font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(zh) {
+  line-height: 1.175;
+}
+
+.pd-category-header .pd-billboard-header:lang(ko) {
+  font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(zh-CN) {
+  font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(zh-HK) {
+  font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(zh-MO) {
+  font-family: "SF Pro HK", "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.pd-category-header .pd-billboard-header:lang(zh-TW) {
+  font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-category-header .pd-billboard-header {
+    font-size: 28px;
+    line-height: 1.1073;
+    font-weight: 500;
+    letter-spacing: 0.012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(th) {
+    font-size: 25px;
+    line-height: 1.4;
+    font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(zh) {
+    line-height: 1.28595;
+  }
+  .pd-category-header .pd-billboard-header:lang(ar) {
+    font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(ja) {
+    font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(ko) {
+    font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(zh-CN) {
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(zh-HK) {
+    font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(zh-MO) {
+    font-family: "SF Pro HK", "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  .pd-category-header .pd-billboard-header:lang(zh-TW) {
+    font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+}
+
+.pd-category-header .pd-billboard-link {
+  margin: 0;
+  padding-top: 1em;
+}
+
+.pd-category-header .pd-billboard-links {
+  margin: 0;
+  padding-top: 1em;
+}
+
+.pd-category-header .pd-billboard-links li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+  .pd-category-header .pd-billboard-links li {
+    display: block;
+    margin: 0;
+  }
+  .pd-category-header .pd-billboard-links li + li {
+    padding-top: 10px;
+  }
+}
+
+.pd-category-header .pd-billboard-links li:last-child {
+  margin-right: 0;
+}
+
+.pd-category-header .pd-billboard-frost {
+  width: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 7px 0px;
+  bottom: 0px;
+  text-align: center;
+}

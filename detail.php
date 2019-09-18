@@ -15,6 +15,16 @@ $preference->back_urls = array(
 );
 $preference->auto_return = "all";
 
+$preference->payment_methods = array(
+    "excluded_payment_methods" => array(
+      array("id" => "master")
+    ),
+    "excluded_payment_types" => array(
+      array("id" => "ticket")
+    ),
+    "installments" => 6
+  );
+
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->title = $_POST['title'];
@@ -148,11 +158,11 @@ $preference->save();
 
                                             </h3>
                                         </div>
-                                        <h3 >
-                                            <?php echo $_POST['price'] ?>
+                                        <h3>
+                                            <?php echo $_POST['unit'] ?>
                                         </h3>
                                         <h3 >
-                                            <?php echo "$" . $_POST['unit'] ?>
+                                            <?php echo "$" . $_POST['price'] ?>
                                         </h3>
                                     </div>
                                     <form action="detail.php" method="POST">

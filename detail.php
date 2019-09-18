@@ -13,7 +13,7 @@ $preference->back_urls = array(
     "failure" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/fallo.php",
     "pending" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/pending.php"
 );
-$preference->auto_return = "all";
+$preference->auto_return = "approved";
 
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(

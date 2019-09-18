@@ -4,9 +4,4 @@
 
 require_once __DIR__ . '/composer/autoload_real.php';
 
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-MercadoPago\SDK::setAccessToken('TEST-6471621515269229-091820-59695e78ebc52b63504816c86a9ef4d6-121176023');
-
-
 return ComposerAutoloaderInit67d6769bf1d3ee4d15e5cc768e079ed2::getLoader();

@@ -1,3 +1,38 @@
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+
+// Agrega credenciales
+MercadoPago\SDK::setAccessToken('TEST-555894209657742-022517-d6f9fa55ba6a66797760d013da8d49b7__LA_LB__-181662021');
+
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+$preference->back_urls = array(
+    "success" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/gracias.php",
+    "failure" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/fallo.php",
+    "pending" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/pending.php"
+);
+$preference->auto_return = "approved";
+
+$preference->payment_methods = array(
+    "excluded_payment_methods" => array(
+      array("id" => "master")
+    ),
+    "excluded_payment_types" => array(
+      array("id" => "ticket")
+    ),
+    "installments" => 6
+  );
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = $_POST['title'];
+$item->quantity = intval($_POST['unit']);
+$item->unit_price = floatval($_POST['price']);
+$preference->items = array($item);
+$preference->save();
+?>
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -123,14 +158,20 @@
 
                                             </h3>
                                         </div>
-                                        <h3 >
-                                            <?php echo $_POST['price'] ?>
+                                        <h3>
+                                            <?php echo $_POST['unit'] ?>
                                         </h3>
                                         <h3 >
-                                            <?php echo "$" . $_POST['unit'] ?>
+                                            <?php echo "$" . $_POST['price'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <form action="detail.php" method="POST">
+                                        <script
+                                        src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                        data-preference-id="<?php echo $preference->id; ?>">
+                                        </script>
+                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>

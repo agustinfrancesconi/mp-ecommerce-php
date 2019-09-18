@@ -8,6 +8,13 @@ MercadoPago\SDK::setAccessToken('TEST-555894209657742-022517-d6f9fa55ba6a6679776
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
+$preference->back_urls = array(
+    "success" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/gracias.php",
+    "failure" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/fallo.php",
+    "pending" => "https://cocodelacueva-mp-ecommerce-php.herokuapp.com/pending.php"
+);
+$preference->auto_return = "all";
+
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->title = $_POST['title'];

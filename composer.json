@@ -1,5 +1,12 @@
 {
-    "name": "mp-ecommerce-php",
-    "type": "project",
-    "require": {}
+    "name": "coco/mp-ecommerce-php",
+    "authors": [
+        {
+            "name": "coco",
+            "email": "coco@lacueva.tv"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "dev-master"
+    }
 }

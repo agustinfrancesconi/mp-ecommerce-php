@@ -1,3 +1,7 @@
+<?php 
+error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -124,7 +128,8 @@
                                             </h3>
                                         </div>
                                         <h3 >
-                                            <?php echo $_POST['price'] ?>
+                                            <?php //echo $_POST['price'] ?>
+                                            <?php echo 6 ?>
                                         </h3>
                                         <h3 >
                                             <?php echo "$" . $_POST['unit'] ?>

@@ -132,7 +132,7 @@
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pague a compra</button>
+                                    <button type="submit" class="mercadopago-button" formmethod="post"></button>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
       },
       render: {
             container: '.mercadopago-button', // Indique o nome da class onde será exibido o botão de pagamento
-            label: 'Pague a compra', // Muda o texto do botão de pagamento (opcional)
+            label: 'Pagar', // Muda o texto do botão de pagamento (opcional)
       }
 });
 </script>

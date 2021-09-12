@@ -76,8 +76,8 @@
                                 <div class="as-accessories-filter-tile column large-6 small-3">
 
                                     <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
-                                        <h2 class=" as-filter-button-text">
-                                            Comprado com sucesso!
+                                        <h2 class=" as-filter-button-text" style="text-align: center;">
+                                            Compra efetuada com sucesso
                                         </h2>
                                     </button>
 
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <div class="as-accessories-results  as-search-desktop" style="text-align: center;">
-                        <?php echo "<a href=\"javascript:history.go(-1)\" style='background-color: #0984e3; color: #fff; padding: 2px 10px; border-radius: 3px; font-size: 1.3em; margin: 10px auto; display: inline-block;'>Voltar</a>";?>
+                        <?php echo "<a href=\"javascript:history.go(-1)\" style='background-color: #0984e3; color: #fff; padding: 2px 10px; border-radius: 3px; font-size: 1.3em; margin: 10px auto; display: inline-block;'>Voltar para a página</a>";?>
                         </div>
                     </div>
                 </div>

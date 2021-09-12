@@ -74,19 +74,16 @@
                         <div class="as-searchnav-placeholder" style="height: 77px;">
                             <div class="row as-search-navbar" id="as-search-navbar" style="width: auto;">
                                 <div class="as-accessories-filter-tile column large-6 small-3">
-
-                                    <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text" style="width: 100%; text-align: center;">
                                             Compra efetuada com sucesso
                                         </h2>
-                                    </button>
 
 
                                 </div>
 
                             </div>
                         </div>
-                        <div class="as-accessories-results  as-search-desktop">
+                        <div class="as-accessories-results  as-search-desktop" style="text-align: center;">
                         <?php echo "<a href=\"javascript:history.go(-1)\" style='background-color: #0984e3; color: #fff; padding: 2px 10px; border-radius: 3px; font-size: 1.3em; margin-top: 20px; margin-bottom: 20px; display: inline-block;'>Voltar</a>";?>
                         </div>
                     </div>

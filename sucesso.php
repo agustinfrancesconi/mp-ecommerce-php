@@ -86,7 +86,7 @@
 
                             </div>
                         </div>
-                        <div class="as-accessories-results  as-search-desktop" style="text-align: center;">
+                        <div class="as-accessories-results  as-search-desktop">
                         <?php echo "<a href=\"javascript:history.go(-1)\" style='background-color: #0984e3; color: #fff; padding: 2px 10px; border-radius: 3px; font-size: 1.3em; margin: 10px auto; display: inline-block;'>Voltar</a>";?>
                         </div>
                     </div>

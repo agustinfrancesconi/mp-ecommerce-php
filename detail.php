@@ -49,24 +49,6 @@
     MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946d5ce5a-725736327');
     ?>
 
-    <script>
-    // Adicione as credenciais do SDK
-    const mp = new MercadoPago('APP_USR-6096a634-0b35-452c-94c9-a18adb8ffb15', {
-            locale: 'pt-br'
-    });
-
-    // Inicialize o checkout
-    mp.checkout({
-        preference: {
-            id: '725736327-1fc16448-ab85-4df3-a53c-853569acdaa8'
-        },
-        render: {
-                container: '.mercadopago-button', // Indique o nome da class onde será exibido o botão de pagamento
-                label: '"Pague a compra', // Muda o texto do botão de pagamento (opcional)
-        }
-    });
-    </script>
-
 
 <body class="as-theme-light-heroimage">
 
@@ -157,7 +139,9 @@
                                             <?php // echo "$" . $_POST['unit'] ?>
                                         </h3> -->
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">"Pague a compra</button>
+                                    <!-- <button type="submit" class="mercadopago-button" formmethod="post">"Pague a compra</button> -->
+
+                                    <div class="mercadopago-button">"Pague a compra</div>
                                 </div>
                             </div>
                         </div>
@@ -175,5 +159,23 @@
         </div>
 
 </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div id="ac-gn-viewport-emitter"> </div>
+
+<script>
+    // Adicione as credenciais do SDK
+    const mp = new MercadoPago('APP_USR-6096a634-0b35-452c-94c9-a18adb8ffb15', {
+            locale: 'pt-br'
+    });
+
+    // Inicialize o checkout
+    mp.checkout({
+        preference: {
+            id: '725736327-1fc16448-ab85-4df3-a53c-853569acdaa8'
+        },
+        render: {
+                container: '.mercadopago-button', // Indique o nome da class onde será exibido o botão de pagamento
+                label: 'Pague a compra', // Muda o texto do botão de pagamento (opcional)
+        }
+    });
+    </script>
 
 </body></html>

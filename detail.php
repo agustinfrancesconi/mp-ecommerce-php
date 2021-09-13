@@ -159,7 +159,7 @@
 <script>
 // Adicione as credenciais do SDK
   const mp = new MercadoPago('APP_USR-6096a634-0b35-452c-94c9-a18adb8ffb15', {
-        locale: 'es-AR'
+        locale: 'pt-BR'
   });
 
   // Inicialize o checkout

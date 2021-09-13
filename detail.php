@@ -168,7 +168,7 @@
   // Inicialize o checkout
   mp.checkout({
       preference: {
-          id: '725736327-dd16250e-78e1-424e-a1c1-2023a8268fa2'
+          id: '725736327-ab3024e0-fd55-4a50-9681-5cfd30d5a83c'
       },
       render: {
             container: '.mercadopago-button', // Indique o nome da class onde será exibido o botão de pagamento

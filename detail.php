@@ -132,7 +132,7 @@
                                             <?php // echo "$" . $_POST['unit'] ?>
                                         </h3> -->
                                     </div>
-                                    <button name="redirect" onClick="redirect()">Pague a compra</button>
+                                    <button name="redirect" onClick="redirect()" class="mercadopago-button">Pague a compra</button>
                                 </div>
                             </div>
                         </div>

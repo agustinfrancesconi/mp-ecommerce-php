@@ -136,7 +136,7 @@
                                             <?php // echo "$" . $_POST['unit'] ?>
                                         </h3> -->
                                     </div>
-                                    <button class="mercadopago-button">Pague a compra</button>
+                                    <button class="mercadopago-button"></button>
                                 </div>
                             </div>
                         </div>

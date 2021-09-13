@@ -141,7 +141,7 @@
                                     </div>
                                     <!-- <button type="submit" class="mercadopago-button" formmethod="post">"Pague a compra</button> -->
 
-                                    <div class="mercadopago-btn">Pague a compra</div>
+                                    <div class="mercadopago-button"></div>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
             id: '725736327-1fc16448-ab85-4df3-a53c-853569acdaa8'
         },
         render: {
-                container: '.mercadopago-btn', // Indique o nome da class onde será exibido o botão de pagamento
+                container: '.mercadopago-button', // Indique o nome da class onde será exibido o botão de pagamento
                 label: 'Pague a compra', // Muda o texto do botão de pagamento (opcional)
         }
     });

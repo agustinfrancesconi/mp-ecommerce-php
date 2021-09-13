@@ -141,7 +141,7 @@
                                     </div>
                                     <!-- <button type="submit" class="mercadopago-button" formmethod="post">"Pague a compra</button> -->
 
-                                    <div class="mercadopago-button"></div>
+                                    <div class="mercadopago-button">"Pague a compra</div>
                                 </div>
                             </div>
                         </div>

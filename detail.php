@@ -44,7 +44,11 @@
 
 
 <body class="as-theme-light-heroimage">
+    <?php
+    require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
 
+    MercadoPago\SDK::setAccessToken("APP_USR-334491433003961-030821-12d7475807d694b645722c1946d5ce5a-725736327"); // Either Production or SandBox AccessToken
+    ?>
     <div class="stack">
         
         <div class="as-search-wrapper" role="main">
@@ -132,8 +136,7 @@
                                             <?php // echo "$" . $_POST['unit'] ?>
                                         </h3> -->
                                     </div>
-                                    <!-- <button name="redirect" onClick="redirect()" class="mercadopago-button">Pague a compra</button> -->
-                                    <input type="submit" id="checkout-open-radio" class="cho-container" onclick="checkout.open()">
+                                    <button class="mercadopago-button">Pague a compra</button>
                                 </div>
                             </div>
                         </div>
@@ -161,17 +164,17 @@ window.open(url, '_top');
 
 <script>
 // Adicione as credenciais do SDK
-  const mp = new MercadoPago('PUBLIC_KEY', {
+  const mp = new MercadoPago('APP_USR-6096a634-0b35-452c-94c9-a18adb8ffb15', {
         locale: 'es-AR'
   });
 
   // Inicialize o checkout
   mp.checkout({
       preference: {
-          id: 'YOUR_PREFERENCE_ID'
+          id: '725736327-dd16250e-78e1-424e-a1c1-2023a8268fa2'
       },
       render: {
-            container: '.cho-container', // Indique o nome da class onde será exibido o botão de pagamento
+            container: '.mercadopago-button', // Indique o nome da class onde será exibido o botão de pagamento
             label: 'Pague a compra', // Muda o texto do botão de pagamento (opcional)
       }
 });

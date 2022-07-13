@@ -1,5 +1,6 @@
 {
-    "name": "mp-ecommerce-php",
+    "name": "agustinfrancesconi/mp-ecommerce-php",
+    "description": "e-commerce de ejemplo para la integración de MercadoPago con php",
     "type": "project",
     "require": {}
 }

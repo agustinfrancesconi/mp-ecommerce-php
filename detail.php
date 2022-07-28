@@ -74,8 +74,6 @@ class DetailController extends Controller
                 'title' => $request['title'],
                 'pictureUrl' => $request['picture_url'],
 
-                'securityView' => 'item',
-
                 'mpPublicKey' => $_ENV['MP_PUBLIC_KEY']
             ]);
 

@@ -1,3 +1,5 @@
+<?php $this->layout('layout') ?>
+
 <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results" style="height: 500px">
 
     <div id="accessories-tab" class="as-accessories-details">

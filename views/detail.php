@@ -1,3 +1,5 @@
+<?php $this->layout('layout', ['securityView' => 'item']) ?>
+
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 
 <script>
@@ -69,7 +71,7 @@
                                         <img src="./assets/003.jpg"
                                              class="ir ir item-image as-producttile-image" alt="" width="445"
                                              height="445"
-                                             style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
+                                             style="content:-webkit-image-set(url(<?= $pictureUrl ?>) 2x);">
                                     </div>
 
                                 </div>

@@ -2,5 +2,9 @@
     "name": "agustinfrancesconi/mp-ecommerce-php",
     "description": "e-commerce de ejemplo para la integración de MercadoPago con php",
     "type": "project",
-    "require": {}
+    "require": {
+        "mercadopago/dx-php": "^2.4",
+        "vlucas/phpdotenv": "^5.4",
+        "league/plates": "^3.4"
+    }
 }

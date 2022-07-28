@@ -8,7 +8,7 @@ class DetailController extends Controller
     public function __construct()
     {
         $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-        $dotenv->load();
+        $dotenv->safeLoad();
 
         MercadoPago\SDK::setAccessToken($_ENV['MP_ACCESS_TOKEN']);
         MercadoPago\SDK::setIntegratorId($_ENV['MP_INTEGRATOR_ID']);

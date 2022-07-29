@@ -11,7 +11,7 @@ class Controller
 
     public function log(string $level, $data): void
     {
-        file_put_contents("$level.log", json_encode($data));
+        file_put_contents("$level.log", json_encode($data), FILE_APPEND);
     }
 
 }

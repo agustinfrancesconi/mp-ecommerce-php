@@ -89,19 +89,23 @@
                             <div class="as-producttile-title">
                                 <h3 class="as-producttile-name">
                                     <p class="as-producttile-tilelink">
-                                        <span data-ase-truncate="2"><?php $title ?></span>
+                                        <span data-ase-truncate="2"><?= $title ?></span>
                                     </p>
 
                                 </h3>
                             </div>
                             <h3>
-                                <?php $unitPrice ?>
+                                Precio: $ <?= $unitPrice ?>
                             </h3>
+                            <h3>
+                                Unidades: <?= $quantity ?>
+                            </h3>
+
                         </div>
-                        <input type="hidden" name="title" value="<?php $title ?>">
-                        <input type="hidden" name="unit_price" value="<?php $unitPrice ?>">
-                        <input type="hidden" name="quantity" value="<?php $quantity ?>">
-                        <input type="hidden" name="picture_url" value="<?php $pictureUrl ?>">
+                        <input type="hidden" name="title" value="<?= $title ?>">
+                        <input type="hidden" name="unit_price" value="<?= $unitPrice ?>">
+                        <input type="hidden" name="quantity" value="<?= $quantity ?>">
+                        <input type="hidden" name="picture_url" value="<?= $pictureUrl ?>">
 
 
                         <div class="cho-container">

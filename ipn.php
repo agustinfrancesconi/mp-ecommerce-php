@@ -8,7 +8,15 @@ class IpnController extends Controller
 {
     public function __invoke(array $request): void
     {
-        $this->log('info', $request);
+        $json = file_get_contents('php://input');
+        $data = array_merge($request, json_decode($json, true));
+
+        $this->log('info', $data);
+
+        http_response_code(200);
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode($data);
+        exit();
     }
 
 }

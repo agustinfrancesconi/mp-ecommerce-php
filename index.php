@@ -627,9 +627,8 @@
                                 <div class="as-producttile-tilehero with-paddlenav with-paddlenav-onhover">
                                     <div class="as-dummy-container as-dummy-img">
 
-                                        <img src="./assets/samsung-galaxy-s9-xxl.jpg"
-                                             class="ir ir item-image as-producttile-image  " alt="" width="445"
-                                             height="445">
+                                        <img src="./assets/samsung-galaxy-s9-xxl.jpg" class="ir ir item-image as-producttile-image "
+                                             alt="" width="445" height="445">
                                     </div>
                                     <div class="images mini-gallery gal1 ">
                                         <ul class="clearfix as-producttile-nojs">
